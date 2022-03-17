@@ -14,15 +14,15 @@ public class Main {
     public static String goWalk(int ageHuman, int outdoorTemperature) {
         {
 
-            if (ageHuman >= 20 && generateRandomAge() <= 45 && outdoorTemperature >= -20 && outdoorTemperature <= 30)
+            if (generateRandomAge() >= 20 && generateRandomAge() <= 45 && outdoorTemperature >= -20 && outdoorTemperature <= 30)
 
                 return "Можно идти гулять";
 
-            else if (ageHuman < 20 && outdoorTemperature >= 0 && outdoorTemperature <= 28)
+            else if (generateRandomAge() < 20 && outdoorTemperature >= 0 && outdoorTemperature <= 28)
 
                 return "Можно идти гулять";
 
-            else if (ageHuman > 45 && outdoorTemperature >= -10 && outdoorTemperature <= 25)
+            else if (generateRandomAge() > 45 && outdoorTemperature >= -10 && outdoorTemperature <= 25)
 
                 return "Можно идти гулять";
 
